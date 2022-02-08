@@ -9,6 +9,11 @@
 <body>
     <p id="text">hello world</p>
     <button id="mybutton">Change text</button>
+    <p id="secondParagraph">JS is  ....</p>
+    <p id="emptyParagraph"></p>
+    <button id="new">New</button>
+    <p id="moreText">This is some text</p>
+    <button id="styleText">Style Text</button>
     
     <!-- <button onclick="alert('Hi!')">Submit</button> -->
     <script type="text/javascript">
@@ -23,6 +28,14 @@
             alert("button clicked");   
         document.getElementById("text").innerHTML = "Hello World!";             
         }
+        document.getElementById("mybutton").onclick = function() {
+            alert("button clicked");   
+        document.getElementById("secondParagraph").innerHTML = "I think JS is " + document.getElementById("secondParagraph").innerHTML + "awesome";    
+        document.getElementById("new").onclick = function() {
+            document.getElementById("emptyParagraph").innerHTML = "Hello World!";
+        }         
+        }
+        
     </script>
     
 </body>
