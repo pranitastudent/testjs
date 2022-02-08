@@ -8,6 +8,8 @@
 </head>
 <body>
     <p id="text">hello world</p>
+    <button id="mybutton">Change text</button>
+    
     <!-- <button onclick="alert('Hi!')">Submit</button> -->
     <script type="text/javascript">
         // alert("hi bob"); //
@@ -17,7 +19,10 @@
         jhjhjhjhjhhj
         */
         document.getElementById("text").innerHTML = "Hello Rob!";
-
+        document.getElementById("mybutton").onclick = function() {
+            alert("button clicked");   
+        document.getElementById("text").innerHTML = "Hello World!";             
+        }
     </script>
     
 </body>
