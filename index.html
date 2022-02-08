@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .circle {
+            width:200px;
+            height:200px;
+            border-radius:50%;
+            float:left;
+            margin:50px;
+        }
+
+        #red-circle {
+            background-color: red;
+        }
+        #blue-circle {
+            background-color: blue;
+        }
+        #yellow-circle {
+            background-color: yellow;
+        }
+        
+    </style>
     <title>Javascript</title>
 </head>
 <body>
@@ -14,6 +34,10 @@
     <button id="new">New</button>
     <p id="moreText">This is some text</p>
     <button id="styleText">Style Text</button>
+
+    <div class="circle" id="red-circle"></div>
+    <div class="circle" id="blue-circle"></div>
+    <div class="circle" id="yellow-circle"></div>
     
     <!-- <button onclick="alert('Hi!')">Submit</button> -->
     <script type="text/javascript">
@@ -35,7 +59,25 @@
             document.getElementById("emptyParagraph").innerHTML = "Hello World!";
         }         
         }
+        document.getElementById("styleText").onclick = function() {
+            document.getElementById("moreText").style.fontSize ="100px";
+        }
+
+
+        document.getElementById("red-circle").onclick = function(){
+
+            document.getElementById("red-circle").style.display = "none";
+        }
         
+        document.getElementById("blue-circle").onclick = function(){
+
+            document.getElementById("blue-circle").style.display = "none";
+        }
+
+        document.getElementById("yellow-circle").onclick = function(){
+
+            document.getElementById("yellow-circle").style.display = "none";
+        }
     </script>
     
 </body>
